@@ -4,9 +4,13 @@ function signIn() {
    // Show processing indicator
   //  document.getElementById("processing-indicator").style.display = "block";
     var isDataEntered = username.trim() !== '' || password.trim() !== '';
-    var processingIndicator = document.getElementById('processing-indicator');
-    processingIndicator.style.display = isDataEntered ? 'block' : 'none';
- 
+    if (isDataEntered) {
+      var processingIndicator = document.getElementById('processing-indicator');
+      processingIndicator.style.display = isDataEntered ? 'block' : 'none';
+    }else{
+      window.alert('Please enter valid data in all fields');
+    }
+  
   // Prepare data for POST request
   var data = {
     email: username,
@@ -63,8 +67,12 @@ function signUp() {
 
     // document.getElementById("processing-indicator").style.display = "block";
     var isDataEntered = name.trim() !== '' || email.trim() !== '' || password.trim() !== ''|| mobile.trim() !== '';
-    var processingIndicator = document.getElementById('processing-indicator');
-    processingIndicator.style.display = isDataEntered ? 'block' : 'none';
+    if (isDataEntered) {
+      var processingIndicator = document.getElementById('processing-indicator');
+      processingIndicator.style.display = isDataEntered ? 'block' : 'none';
+    }else{
+      window.alert('Please enter valid data in all fields');
+    }
   
     // Create a data object to send in the POST request
     const data = {
