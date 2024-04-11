@@ -1,0 +1,137 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#signin-section .logo {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 5px;
+}
+.signup .logo{
+  width: 300px;
+  height: 150px;
+  margin-bottom: 5px;
+}
+
+#forgot-password-section .logo{
+  width: 300px;
+  height: 150px;
+  margin-bottom: 5px;
+}
+
+#signin-section {
+  margin-top: 20px;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+input, button {
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button1 {
+  width: 50px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button1:hover {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Add this CSS to position the welcome message */
+#welcome-message {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Add this CSS for password toggle button */
+.password-toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.password-toggle-btn i {
+  color: #ccc; /* Change color as needed */
+}
+
+.password-toggle-btn:focus {
+  outline: none;
+}
+.processing-indicator {
+  display: none;
+  text-align: center;
+}
+
+.processing-indicator img {
+  width: 50px;
+  height: 50px;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.page-title h1{
+  margin-bottom: 5px;
+}

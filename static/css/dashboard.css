@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --clr-primary:#737fece5;
+  --clr-danger:#ff7782;
+  --clr-success:#41f1b6;
+  --clr-warning:#ffbb55;
+  --clr-info-dark:#7d8da1;
+  --clr-info-light:#dce1eb;
+  --clr-white:#fff;
+  --clr-black:#222;
+  --clr-grey:#888;
+  --clr-light:#f2f2f2;
+  --clr-dark:#16171f;
+  --clr-primary-variant:#111e88;
+  --clr-dark-variant:#677483;
+  --clr-color-background:#f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+  
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  
+  --box-shadow: 0 2rem 3rem var(--clr-light);
+
+  --transition: all 300ms ease;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  list-style: none;
+  appearance: none;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  background-color: var(--clr-color-background);
+  user-select: none;
+  overflow-x: hidden;
+}
+.container{
+  display: grid;
+  width: 96%;
+  gap: 1.8rem;
+  grid-template-columns: 13rem auto;
+  margin: 0 auto;
+
+}
+a{
+  color: var(--clr-dark);
+}
+h1{
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+h2{
+  font-size: 1.3rem;
+
+}
+h3{
+  font-size:0.87rem;
+}
+h4{
+  font-size: 0.8rem;
+}
+h5{
+  font-size: 0.77rem;
+}
+small{
+  font-size: 0.75rem;
+}
+.profile-photo img{
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden
+}
+.text-muted{
+  color: var(--clr-info-dark);
+}
+p{
+  color: var(--clr-dark-variant);
+}
+b{
+  color: var(--clr-dark);
+}
+.primary{
+  color: var(--clr-primary);
+}
+.danger{
+  color: var(--clr-danger);
+}
+.success{
+  color: var(--clr-success);
+}
+.warning{
+  color: var(--clr-warning);
+}
+
+/* ----intialisation ends here */
+/* =============={aside section start here} ============= */
+
+ aside{
+  height: 100vh;
+ }
+/* =============={aside section start here} ============= */
+ aside .top{
+  background-color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+ }
+
+ aside .logo {
+  display: flex;
+  gap: 1rem;
+
+ }
+
+ aside .logo img{
+  margin-top: 0.8rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+ }
+
+ aside .top .close{
+  display: none;
+ }
+/* --------------{top section ends here}---------------- */
+/* =============={side bar section start here} ============= */
+aside .slide-bar{
+  background-color: var(--clr-white);
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  position: relative;
+  top: 1rem
+
+}
+
+.user-support{
+  align-items: center;
+}
+
+aside .slide-bar h3{
+  font-weight: bold;
+}
+
+aside .slide-bar a{
+  display: flex;
+  color: var(--clr-dark);
+  margin-left: 2rem;
+  gap: 1rem;
+  align-items: center;
+  height: 3.2rem;
+  transition: all .1s ease-in;
+}
+
+aside .slide-bar a span{
+  font-size: 1.6rem;
+  transition: all .1s ease-in;
+}
+
+aside .slide-bar a:last-child{
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+
+aside .slide-bar a:hover{
+  color: var(--clr-primary);
+  transition: 0.4s ease-in;
+}
+aside .slide-bar a:hover span{
+  margin-left: 1rem;
+}
+
+
+
+/* --------------{side bar section ends here}---------------- */
+
+/* --------------{aside section ends here}---------------- */
+
+
+/* =============={main section start here} ============= */
+main{
+  margin-top: 1.4rem;
+  width: flex;
+
+}
+
+main h1{
+  color: var(--clr-dark);
+  display: flex;
+  background-color: var(--clr-white);
+  padding: 0.5rem ;
+  text-align: center;
+}
+
+main h2{
+  color: var(--clr-dark);
+  background-color: var(--clr-white);
+  padding: 0.5rem ;
+  text-align: center;
+ 
+
+}
+main p{
+  color: var(--clr-dark);
+}
+
+
+main .content {
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-white);
+
+}
+
+/* subscription box  */
+.subscription-box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Responsive grid layout */
+  gap: 0.5px; /*Spacing between grid items */ 
+ }
+
+ .subscription-box {
+  /* border: 2px solid #007bff; Border with color */
+  border-radius: 10px;
+  margin: 1rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+
+.subscription-box h3 {
+  margin-top: 0;
+}
+
+.subscription-box p {
+  margin-top: 15px;
+}
+.subscription-box img{
+  border-radius: 0.4rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.subscription-box button {
+  margin-top: 2rem; /* Align button to the bottom */
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+  background-color: var(--clr-primary-variant);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-subscribe:hover{
+  background-color: green; /* Darker Green */
+}
+/* --------------- user info----------------------*/
+.user-info {
+  max-width: felx;
+  margin: 50px auto;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#stop-subscription-btn {
+  margin-top: auto; /* Align button to the bottom */
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--clr-danger);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#stop-subscription-btn:hover {
+  background-color: darkred;
+}
+
+.user-info h2{
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid var(--clr-grey);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 2.5rem;
+  
+}
+
+.user-info p{
+  margin-bottom: 3rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user-support span{
+  margin-left: 2rem;
+}
+
+.user-info span{
+  margin-left: 2rem;
+}
+.user-support h2{
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  border: 2px solid var(--clr-grey);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 2.5rem;
+  
+}
+.user-support p{
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.user-support span{
+  margin-left: 2rem;
+}
+/* Style for the TradingView widget container */
+
+/* Styles for the popup */
+.popup-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+input[type="text"], button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.popup p{
+  color: var(--clr-dark);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.popup h3{
+  color: var(--clr-dark);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px; 
+}
+
+
+
+
+
+/* --------------{main section ends here}---------------- */
+
+
+
+
+
+
+

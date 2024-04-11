@@ -1,0 +1,46 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+#header {
+  height: 50px;
+  width: 100%;
+  background-color:#4CAF50; /* Adjust color as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Ensure the header stays on top of other elements */
+}
+#sheetFrame {
+  width: 100%;
+  height: calc(100% + 5rem); /* Add 50px to the height */
+  border: none;
+  margin-top: -5rem; /* Add negative margin to cover the top part */
+  position: relative; /* Add relative position to adjust stacking context */
+}
+.dashboard-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  z-index: 9999; /* Ensure the button stays on top of other elements */
+  background-color: #FFF6E9; /* Green */
+  border: none;
+  border-radius: 2rem;
+  color: #211C6A;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+.top-heading{
+  color:#FFF6E9;
+  text-align: center;
+  margin-top: 0.25rem;
+}

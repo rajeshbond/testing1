@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">Forgot Password</h1>
+    <div id="forgot-password-section">
+      <img src="static/images/logo2.png" alt="Logo" class="logo">
+        <div id="signin-section">
+      <p>Please enter your email address below.<br> We will send you instructions on<br>how to reset your password.</p>
+      <div class="input-container">
+        <input type="email" id="email" placeholder="Email Address">
+      </div>
+      <button onclick="sendResetEmail()">Send Reset Instructions</button>
+      <p>Remembered your password? <a href="/">Sign in</a></p>
+            <div class="processing-indicator" id="processing-indicator">
+                <img src="static/images/loading-spinner.gif" alt="Processing...">
+                <p>Processing...Please wait</p>
+    </div>
+    </div>
+  </div>
+
+  <script src="static/js/script.js"></script>
+</body>
+</html>
