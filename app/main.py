@@ -249,7 +249,7 @@ def signup(request: schemes.Signup):
         email_verification_link = auth.generate_email_verification_link(email=email)
         print(email_verification_link)
         
-        # send_mail.send_verification_email(email_to=email, update_link=email_verification_link)   
+        send_mail.send_verification_email(email_to=email, update_link=email_verification_link)   
     except auth.EmailAlreadyExistsError:
         raise HTTPException(status_code=400, detail=f"Email already exists for {email}")
     except Exception as e:
